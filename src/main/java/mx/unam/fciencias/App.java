@@ -14,13 +14,21 @@ public class App {
         
         JFrame marco = new JFrame("Sierpinsky");
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        marco.setPreferredSize(new Dimension(600, 600));
+        marco.setPreferredSize(new Dimension(600, 800));
         
-        Sierpinski sierpinski = new Sierpinski(600, 600);
+//        Sierpinski sierpinski = new Sierpinski(600, 600);
+//        
+//        marco.add(sierpinski);
+//        marco.pack();
+//        marco.setVisible(true);
         
-        marco.add(sierpinski);
+        Koch koch = new Koch(600,600);
+
+        marco.add(koch);
         marco.pack();
         marco.setVisible(true);
+        
+        
         
     }
 }
